@@ -1,0 +1,49 @@
+PODS:
+  - BaiduMapKit (3.3.0)
+  - BlocksKit (2.2.5):
+    - BlocksKit/All (= 2.2.5)
+  - BlocksKit/All (2.2.5):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
+    - BlocksKit/MessageUI
+    - BlocksKit/UIKit
+  - BlocksKit/Core (2.2.5)
+  - BlocksKit/DynamicDelegate (2.2.5)
+  - BlocksKit/MessageUI (2.2.5):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
+  - BlocksKit/UIKit (2.2.5):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
+  - Charts (3.0.2):
+    - Charts/Core (= 3.0.2)
+  - Charts/Core (3.0.2)
+  - PureLayout (2.0.6)
+  - ReactiveCocoa (2.5):
+    - ReactiveCocoa/UI (= 2.5)
+  - ReactiveCocoa/Core (2.5):
+    - ReactiveCocoa/no-arc
+  - ReactiveCocoa/no-arc (2.5)
+  - ReactiveCocoa/UI (2.5):
+    - ReactiveCocoa/Core
+  - WXSTransition (1.2.1)
+
+DEPENDENCIES:
+  - BaiduMapKit (~> 3.3.0)
+  - BlocksKit (~> 2.2.5)
+  - Charts (~> 3.0.2)
+  - PureLayout (~> 2.0.5)
+  - ReactiveCocoa (= 2.5)
+  - WXSTransition (~> 1.2.1)
+
+SPEC CHECKSUMS:
+  BaiduMapKit: 6517f84bdca032170ee9da39985bb64eba8ed900
+  BlocksKit: 7f422b971407001178d181a43b99014ea2591fe6
+  Charts: 236d6ccdd0ce6feae151d89e829a7397381a21fd
+  PureLayout: f25f0bb904d5ccfe6e31da3cb869185259f02e0d
+  ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
+  WXSTransition: 0bd758aaa1f5869a908b1bb103c4a9e26ad1d3eb
+
+PODFILE CHECKSUM: 725774a096471e7802e264ee8d15d85d88a32916
+
+COCOAPODS: 1.1.1

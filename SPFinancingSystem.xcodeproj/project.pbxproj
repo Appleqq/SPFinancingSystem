@@ -1,0 +1,962 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1A119FF3CAA9CB1F50021D1F /* Pods_SPFinancingSystem.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 882DC48DE78C381449F1B50A /* Pods_SPFinancingSystem.framework */; };
+		3070AA457037FB81FDA60C5E /* Pods_SPFinancingSystemTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5372C51CBC0D9471FD9039AF /* Pods_SPFinancingSystemTests.framework */; };
+		E7D0B4A29E9209AFB56FEE23 /* Pods_SPFinancingSystem_SPFinancingSystemUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6152045F47BA5065621C155 /* Pods_SPFinancingSystem_SPFinancingSystemUITests.framework */; };
+		FF1F54621ECC17350008F047 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FF1F54611ECC17350008F047 /* main.m */; };
+		FF1F54651ECC17350008F047 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FF1F54641ECC17350008F047 /* AppDelegate.m */; };
+		FF1F54681ECC17350008F047 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF1F54671ECC17350008F047 /* ViewController.m */; };
+		FF1F546B1ECC17350008F047 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF1F54691ECC17350008F047 /* Main.storyboard */; };
+		FF1F546D1ECC17350008F047 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF1F546C1ECC17350008F047 /* Assets.xcassets */; };
+		FF1F54701ECC17350008F047 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF1F546E1ECC17350008F047 /* LaunchScreen.storyboard */; };
+		FF1F547B1ECC17350008F047 /* SPFinancingSystemTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FF1F547A1ECC17350008F047 /* SPFinancingSystemTests.m */; };
+		FF1F54861ECC17350008F047 /* SPFinancingSystemUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FF1F54851ECC17350008F047 /* SPFinancingSystemUITests.m */; };
+		FF4ED48E1ECC181100A3FF70 /* SPBaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FF4ED4671ECC181100A3FF70 /* SPBaseTableViewCell.m */; };
+		FF4ED48F1ECC181100A3FF70 /* SPBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = FF4ED4691ECC181100A3FF70 /* SPBaseView.m */; };
+		FF4ED4901ECC181100A3FF70 /* SPBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF4ED46B1ECC181100A3FF70 /* SPBaseViewController.m */; };
+		FF4ED4911ECC181100A3FF70 /* SPBaseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FF4ED46D1ECC181100A3FF70 /* SPBaseViewModel.m */; };
+		FF4ED4921ECC181100A3FF70 /* SPBaseWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF4ED46F1ECC181100A3FF70 /* SPBaseWebViewController.m */; };
+		FF4ED4931ECC181100A3FF70 /* SPChartBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF4ED4711ECC181100A3FF70 /* SPChartBaseViewController.m */; };
+		FF4ED4941ECC181100A3FF70 /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = FF4ED4751ECC181100A3FF70 /* UIColor+Hex.m */; };
+		FF4ED4951ECC181100A3FF70 /* UIView+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = FF4ED4771ECC181100A3FF70 /* UIView+Common.m */; };
+		FF4ED4961ECC181100A3FF70 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = FF4ED4791ECC181100A3FF70 /* UIView+Frame.m */; };
+		FF4ED4971ECC181100A3FF70 /* UIViewController+KKUser.m in Sources */ = {isa = PBXBuildFile; fileRef = FF4ED47B1ECC181100A3FF70 /* UIViewController+KKUser.m */; };
+		FF4ED4981ECC181100A3FF70 /* SPFinacingHeadCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FF4ED47E1ECC181100A3FF70 /* SPFinacingHeadCell.m */; };
+		FF4ED4991ECC181100A3FF70 /* SPFinancingMainTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FF4ED4801ECC181100A3FF70 /* SPFinancingMainTableCell.m */; };
+		FF4ED49A1ECC181100A3FF70 /* SPHalfCicrleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FF4ED4821ECC181100A3FF70 /* SPHalfCicrleTableViewCell.m */; };
+		FF4ED49B1ECC181100A3FF70 /* SPHalfCircleLabView.m in Sources */ = {isa = PBXBuildFile; fileRef = FF4ED4841ECC181100A3FF70 /* SPHalfCircleLabView.m */; };
+		FF4ED49C1ECC181100A3FF70 /* SPHeadCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = FF4ED4861ECC181100A3FF70 /* SPHeadCellView.m */; };
+		FF4ED49D1ECC181100A3FF70 /* SPScreeningView.m in Sources */ = {isa = PBXBuildFile; fileRef = FF4ED4881ECC181100A3FF70 /* SPScreeningView.m */; };
+		FF4ED49E1ECC181100A3FF70 /* SPFinancingMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF4ED48B1ECC181100A3FF70 /* SPFinancingMainViewController.m */; };
+		FF4ED49F1ECC181100A3FF70 /* SPProjectDistributionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF4ED48D1ECC181100A3FF70 /* SPProjectDistributionViewController.m */; };
+		FF780FEC1ECC21950064ABBB /* SPTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF780FEB1ECC21950064ABBB /* SPTestViewController.m */; };
+		FF780FEE1ECC2A3E0064ABBB /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF780FED1ECC2A3E0064ABBB /* Charts.framework */; };
+		FF780FF31ECC2B7F0064ABBB /* custom_config_0323(黑夜) in Resources */ = {isa = PBXBuildFile; fileRef = FF780FF01ECC2B7F0064ABBB /* custom_config_0323(黑夜) */; };
+		FF780FF41ECC2B7F0064ABBB /* custom_config_0323(清新蓝) in Resources */ = {isa = PBXBuildFile; fileRef = FF780FF11ECC2B7F0064ABBB /* custom_config_0323(清新蓝) */; };
+		FF780FF51ECC2B7F0064ABBB /* custom_config_0323(午夜蓝) in Resources */ = {isa = PBXBuildFile; fileRef = FF780FF21ECC2B7F0064ABBB /* custom_config_0323(午夜蓝) */; };
+		FF780FF81ECC2D9C0064ABBB /* NSArray+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = FF780FF71ECC2D9C0064ABBB /* NSArray+YYAdd.m */; };
+		FF780FFF1ECC2E4C0064ABBB /* NSData+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = FF780FFE1ECC2E4C0064ABBB /* NSData+YYAdd.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FF1F54771ECC17350008F047 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF1F54551ECC17350008F047 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF1F545C1ECC17350008F047;
+			remoteInfo = SPFinancingSystem;
+		};
+		FF1F54821ECC17350008F047 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF1F54551ECC17350008F047 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF1F545C1ECC17350008F047;
+			remoteInfo = SPFinancingSystem;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		46F80BA30EDFB068C1D04C79 /* Pods-SPFinancingSystem-SPFinancingSystemUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SPFinancingSystem-SPFinancingSystemUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SPFinancingSystem-SPFinancingSystemUITests/Pods-SPFinancingSystem-SPFinancingSystemUITests.release.xcconfig"; sourceTree = "<group>"; };
+		5372C51CBC0D9471FD9039AF /* Pods_SPFinancingSystemTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SPFinancingSystemTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		751EEE43BA804777E6D1E65F /* Pods-SPFinancingSystemTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SPFinancingSystemTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SPFinancingSystemTests/Pods-SPFinancingSystemTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7EDC838362EA0704D43CAD48 /* Pods-SPFinancingSystem.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SPFinancingSystem.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SPFinancingSystem/Pods-SPFinancingSystem.debug.xcconfig"; sourceTree = "<group>"; };
+		882DC48DE78C381449F1B50A /* Pods_SPFinancingSystem.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SPFinancingSystem.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC919289F736A1A8DA9CD62B /* Pods-SPFinancingSystemTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SPFinancingSystemTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SPFinancingSystemTests/Pods-SPFinancingSystemTests.release.xcconfig"; sourceTree = "<group>"; };
+		C6152045F47BA5065621C155 /* Pods_SPFinancingSystem_SPFinancingSystemUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SPFinancingSystem_SPFinancingSystemUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9312FAA53EA5821629DB1EA /* Pods-SPFinancingSystem.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SPFinancingSystem.release.xcconfig"; path = "Pods/Target Support Files/Pods-SPFinancingSystem/Pods-SPFinancingSystem.release.xcconfig"; sourceTree = "<group>"; };
+		F997D50BE9313FD9CBD98EED /* Pods-SPFinancingSystem-SPFinancingSystemUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SPFinancingSystem-SPFinancingSystemUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SPFinancingSystem-SPFinancingSystemUITests/Pods-SPFinancingSystem-SPFinancingSystemUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		FF1F545D1ECC17350008F047 /* SPFinancingSystem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SPFinancingSystem.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF1F54611ECC17350008F047 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FF1F54631ECC17350008F047 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FF1F54641ECC17350008F047 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FF1F54661ECC17350008F047 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		FF1F54671ECC17350008F047 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		FF1F546A1ECC17350008F047 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FF1F546C1ECC17350008F047 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FF1F546F1ECC17350008F047 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FF1F54711ECC17350008F047 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF1F54761ECC17350008F047 /* SPFinancingSystemTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SPFinancingSystemTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF1F547A1ECC17350008F047 /* SPFinancingSystemTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPFinancingSystemTests.m; sourceTree = "<group>"; };
+		FF1F547C1ECC17350008F047 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF1F54811ECC17350008F047 /* SPFinancingSystemUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SPFinancingSystemUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF1F54851ECC17350008F047 /* SPFinancingSystemUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPFinancingSystemUITests.m; sourceTree = "<group>"; };
+		FF1F54871ECC17350008F047 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF4ED4651ECC181100A3FF70 /* Global.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Global.h; sourceTree = "<group>"; };
+		FF4ED4661ECC181100A3FF70 /* SPBaseTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPBaseTableViewCell.h; sourceTree = "<group>"; };
+		FF4ED4671ECC181100A3FF70 /* SPBaseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPBaseTableViewCell.m; sourceTree = "<group>"; };
+		FF4ED4681ECC181100A3FF70 /* SPBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPBaseView.h; sourceTree = "<group>"; };
+		FF4ED4691ECC181100A3FF70 /* SPBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPBaseView.m; sourceTree = "<group>"; };
+		FF4ED46A1ECC181100A3FF70 /* SPBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPBaseViewController.h; sourceTree = "<group>"; };
+		FF4ED46B1ECC181100A3FF70 /* SPBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPBaseViewController.m; sourceTree = "<group>"; };
+		FF4ED46C1ECC181100A3FF70 /* SPBaseViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPBaseViewModel.h; sourceTree = "<group>"; };
+		FF4ED46D1ECC181100A3FF70 /* SPBaseViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPBaseViewModel.m; sourceTree = "<group>"; };
+		FF4ED46E1ECC181100A3FF70 /* SPBaseWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPBaseWebViewController.h; sourceTree = "<group>"; };
+		FF4ED46F1ECC181100A3FF70 /* SPBaseWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPBaseWebViewController.m; sourceTree = "<group>"; };
+		FF4ED4701ECC181100A3FF70 /* SPChartBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPChartBaseViewController.h; sourceTree = "<group>"; };
+		FF4ED4711ECC181100A3FF70 /* SPChartBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPChartBaseViewController.m; sourceTree = "<group>"; };
+		FF4ED4741ECC181100A3FF70 /* UIColor+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hex.h"; sourceTree = "<group>"; };
+		FF4ED4751ECC181100A3FF70 /* UIColor+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hex.m"; sourceTree = "<group>"; };
+		FF4ED4761ECC181100A3FF70 /* UIView+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Common.h"; sourceTree = "<group>"; };
+		FF4ED4771ECC181100A3FF70 /* UIView+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Common.m"; sourceTree = "<group>"; };
+		FF4ED4781ECC181100A3FF70 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
+		FF4ED4791ECC181100A3FF70 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
+		FF4ED47A1ECC181100A3FF70 /* UIViewController+KKUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+KKUser.h"; sourceTree = "<group>"; };
+		FF4ED47B1ECC181100A3FF70 /* UIViewController+KKUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+KKUser.m"; sourceTree = "<group>"; };
+		FF4ED47D1ECC181100A3FF70 /* SPFinacingHeadCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPFinacingHeadCell.h; sourceTree = "<group>"; };
+		FF4ED47E1ECC181100A3FF70 /* SPFinacingHeadCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPFinacingHeadCell.m; sourceTree = "<group>"; };
+		FF4ED47F1ECC181100A3FF70 /* SPFinancingMainTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPFinancingMainTableCell.h; sourceTree = "<group>"; };
+		FF4ED4801ECC181100A3FF70 /* SPFinancingMainTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPFinancingMainTableCell.m; sourceTree = "<group>"; };
+		FF4ED4811ECC181100A3FF70 /* SPHalfCicrleTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPHalfCicrleTableViewCell.h; sourceTree = "<group>"; };
+		FF4ED4821ECC181100A3FF70 /* SPHalfCicrleTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPHalfCicrleTableViewCell.m; sourceTree = "<group>"; };
+		FF4ED4831ECC181100A3FF70 /* SPHalfCircleLabView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPHalfCircleLabView.h; sourceTree = "<group>"; };
+		FF4ED4841ECC181100A3FF70 /* SPHalfCircleLabView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPHalfCircleLabView.m; sourceTree = "<group>"; };
+		FF4ED4851ECC181100A3FF70 /* SPHeadCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPHeadCellView.h; sourceTree = "<group>"; };
+		FF4ED4861ECC181100A3FF70 /* SPHeadCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPHeadCellView.m; sourceTree = "<group>"; };
+		FF4ED4871ECC181100A3FF70 /* SPScreeningView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPScreeningView.h; sourceTree = "<group>"; };
+		FF4ED4881ECC181100A3FF70 /* SPScreeningView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPScreeningView.m; sourceTree = "<group>"; };
+		FF4ED48A1ECC181100A3FF70 /* SPFinancingMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPFinancingMainViewController.h; sourceTree = "<group>"; };
+		FF4ED48B1ECC181100A3FF70 /* SPFinancingMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPFinancingMainViewController.m; sourceTree = "<group>"; };
+		FF4ED48C1ECC181100A3FF70 /* SPProjectDistributionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPProjectDistributionViewController.h; sourceTree = "<group>"; };
+		FF4ED48D1ECC181100A3FF70 /* SPProjectDistributionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPProjectDistributionViewController.m; sourceTree = "<group>"; };
+		FF4ED4A01ECC183E00A3FF70 /* SPFinacingSystem.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPFinacingSystem.pch; sourceTree = "<group>"; };
+		FF4ED4A11ECC1F2800A3FF70 /* SPFinancingSystem-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SPFinancingSystem-Bridging-Header.h"; sourceTree = "<group>"; };
+		FF780FEA1ECC21950064ABBB /* SPTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPTestViewController.h; sourceTree = "<group>"; };
+		FF780FEB1ECC21950064ABBB /* SPTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPTestViewController.m; sourceTree = "<group>"; };
+		FF780FED1ECC2A3E0064ABBB /* Charts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Charts.framework; sourceTree = "<group>"; };
+		FF780FF01ECC2B7F0064ABBB /* custom_config_0323(黑夜) */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "custom_config_0323(黑夜)"; sourceTree = "<group>"; };
+		FF780FF11ECC2B7F0064ABBB /* custom_config_0323(清新蓝) */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "custom_config_0323(清新蓝)"; sourceTree = "<group>"; };
+		FF780FF21ECC2B7F0064ABBB /* custom_config_0323(午夜蓝) */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "custom_config_0323(午夜蓝)"; sourceTree = "<group>"; };
+		FF780FF61ECC2D9C0064ABBB /* NSArray+YYAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+YYAdd.h"; sourceTree = "<group>"; };
+		FF780FF71ECC2D9C0064ABBB /* NSArray+YYAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+YYAdd.m"; sourceTree = "<group>"; };
+		FF780FF91ECC2E0E0064ABBB /* YYCategoriesMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYCategoriesMacro.h; sourceTree = "<group>"; };
+		FF780FFD1ECC2E4C0064ABBB /* NSData+YYAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+YYAdd.h"; sourceTree = "<group>"; };
+		FF780FFE1ECC2E4C0064ABBB /* NSData+YYAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+YYAdd.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FF1F545A1ECC17350008F047 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A119FF3CAA9CB1F50021D1F /* Pods_SPFinancingSystem.framework in Frameworks */,
+				FF780FEE1ECC2A3E0064ABBB /* Charts.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF1F54731ECC17350008F047 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3070AA457037FB81FDA60C5E /* Pods_SPFinancingSystemTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF1F547E1ECC17350008F047 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7D0B4A29E9209AFB56FEE23 /* Pods_SPFinancingSystem_SPFinancingSystemUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3D706438EDCE3F10A879BD7C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7EDC838362EA0704D43CAD48 /* Pods-SPFinancingSystem.debug.xcconfig */,
+				D9312FAA53EA5821629DB1EA /* Pods-SPFinancingSystem.release.xcconfig */,
+				F997D50BE9313FD9CBD98EED /* Pods-SPFinancingSystem-SPFinancingSystemUITests.debug.xcconfig */,
+				46F80BA30EDFB068C1D04C79 /* Pods-SPFinancingSystem-SPFinancingSystemUITests.release.xcconfig */,
+				751EEE43BA804777E6D1E65F /* Pods-SPFinancingSystemTests.debug.xcconfig */,
+				AC919289F736A1A8DA9CD62B /* Pods-SPFinancingSystemTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		88E94968C1ACCA45EA986739 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				882DC48DE78C381449F1B50A /* Pods_SPFinancingSystem.framework */,
+				C6152045F47BA5065621C155 /* Pods_SPFinancingSystem_SPFinancingSystemUITests.framework */,
+				5372C51CBC0D9471FD9039AF /* Pods_SPFinancingSystemTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FF1F54541ECC17350008F047 = {
+			isa = PBXGroup;
+			children = (
+				FF1F545F1ECC17350008F047 /* SPFinancingSystem */,
+				FF1F54791ECC17350008F047 /* SPFinancingSystemTests */,
+				FF1F54841ECC17350008F047 /* SPFinancingSystemUITests */,
+				FF1F545E1ECC17350008F047 /* Products */,
+				3D706438EDCE3F10A879BD7C /* Pods */,
+				88E94968C1ACCA45EA986739 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FF1F545E1ECC17350008F047 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FF1F545D1ECC17350008F047 /* SPFinancingSystem.app */,
+				FF1F54761ECC17350008F047 /* SPFinancingSystemTests.xctest */,
+				FF1F54811ECC17350008F047 /* SPFinancingSystemUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FF1F545F1ECC17350008F047 /* SPFinancingSystem */ = {
+			isa = PBXGroup;
+			children = (
+				FF4ED4631ECC181100A3FF70 /* Classes */,
+				FF1F54631ECC17350008F047 /* AppDelegate.h */,
+				FF1F54641ECC17350008F047 /* AppDelegate.m */,
+				FF1F54661ECC17350008F047 /* ViewController.h */,
+				FF1F54671ECC17350008F047 /* ViewController.m */,
+				FF1F54691ECC17350008F047 /* Main.storyboard */,
+				FF1F546C1ECC17350008F047 /* Assets.xcassets */,
+				FF1F546E1ECC17350008F047 /* LaunchScreen.storyboard */,
+				FF1F54711ECC17350008F047 /* Info.plist */,
+				FF1F54601ECC17350008F047 /* Supporting Files */,
+			);
+			path = SPFinancingSystem;
+			sourceTree = "<group>";
+		};
+		FF1F54601ECC17350008F047 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FF780FEF1ECC2B710064ABBB /* map */,
+				FF780FED1ECC2A3E0064ABBB /* Charts.framework */,
+				FF1F54611ECC17350008F047 /* main.m */,
+				FF4ED4A01ECC183E00A3FF70 /* SPFinacingSystem.pch */,
+				FF4ED4A11ECC1F2800A3FF70 /* SPFinancingSystem-Bridging-Header.h */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FF1F54791ECC17350008F047 /* SPFinancingSystemTests */ = {
+			isa = PBXGroup;
+			children = (
+				FF1F547A1ECC17350008F047 /* SPFinancingSystemTests.m */,
+				FF1F547C1ECC17350008F047 /* Info.plist */,
+			);
+			path = SPFinancingSystemTests;
+			sourceTree = "<group>";
+		};
+		FF1F54841ECC17350008F047 /* SPFinancingSystemUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FF1F54851ECC17350008F047 /* SPFinancingSystemUITests.m */,
+				FF1F54871ECC17350008F047 /* Info.plist */,
+			);
+			path = SPFinancingSystemUITests;
+			sourceTree = "<group>";
+		};
+		FF4ED4631ECC181100A3FF70 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				FF4ED4641ECC181100A3FF70 /* Common */,
+				FF4ED4721ECC181100A3FF70 /* Model */,
+				FF4ED4731ECC181100A3FF70 /* Tool */,
+				FF4ED47C1ECC181100A3FF70 /* View */,
+				FF4ED4891ECC181100A3FF70 /* ViewController */,
+			);
+			path = Classes;
+			sourceTree = SOURCE_ROOT;
+		};
+		FF4ED4641ECC181100A3FF70 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				FF4ED4651ECC181100A3FF70 /* Global.h */,
+				FF4ED4661ECC181100A3FF70 /* SPBaseTableViewCell.h */,
+				FF4ED4671ECC181100A3FF70 /* SPBaseTableViewCell.m */,
+				FF4ED4681ECC181100A3FF70 /* SPBaseView.h */,
+				FF4ED4691ECC181100A3FF70 /* SPBaseView.m */,
+				FF4ED46A1ECC181100A3FF70 /* SPBaseViewController.h */,
+				FF4ED46B1ECC181100A3FF70 /* SPBaseViewController.m */,
+				FF4ED46C1ECC181100A3FF70 /* SPBaseViewModel.h */,
+				FF4ED46D1ECC181100A3FF70 /* SPBaseViewModel.m */,
+				FF4ED46E1ECC181100A3FF70 /* SPBaseWebViewController.h */,
+				FF4ED46F1ECC181100A3FF70 /* SPBaseWebViewController.m */,
+				FF4ED4701ECC181100A3FF70 /* SPChartBaseViewController.h */,
+				FF4ED4711ECC181100A3FF70 /* SPChartBaseViewController.m */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		FF4ED4721ECC181100A3FF70 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FF4ED4731ECC181100A3FF70 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				FF780FF91ECC2E0E0064ABBB /* YYCategoriesMacro.h */,
+				FF780FF61ECC2D9C0064ABBB /* NSArray+YYAdd.h */,
+				FF780FF71ECC2D9C0064ABBB /* NSArray+YYAdd.m */,
+				FF780FFD1ECC2E4C0064ABBB /* NSData+YYAdd.h */,
+				FF780FFE1ECC2E4C0064ABBB /* NSData+YYAdd.m */,
+				FF4ED4741ECC181100A3FF70 /* UIColor+Hex.h */,
+				FF4ED4751ECC181100A3FF70 /* UIColor+Hex.m */,
+				FF4ED4761ECC181100A3FF70 /* UIView+Common.h */,
+				FF4ED4771ECC181100A3FF70 /* UIView+Common.m */,
+				FF4ED4781ECC181100A3FF70 /* UIView+Frame.h */,
+				FF4ED4791ECC181100A3FF70 /* UIView+Frame.m */,
+				FF4ED47A1ECC181100A3FF70 /* UIViewController+KKUser.h */,
+				FF4ED47B1ECC181100A3FF70 /* UIViewController+KKUser.m */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		FF4ED47C1ECC181100A3FF70 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FF4ED47D1ECC181100A3FF70 /* SPFinacingHeadCell.h */,
+				FF4ED47E1ECC181100A3FF70 /* SPFinacingHeadCell.m */,
+				FF4ED47F1ECC181100A3FF70 /* SPFinancingMainTableCell.h */,
+				FF4ED4801ECC181100A3FF70 /* SPFinancingMainTableCell.m */,
+				FF4ED4811ECC181100A3FF70 /* SPHalfCicrleTableViewCell.h */,
+				FF4ED4821ECC181100A3FF70 /* SPHalfCicrleTableViewCell.m */,
+				FF4ED4831ECC181100A3FF70 /* SPHalfCircleLabView.h */,
+				FF4ED4841ECC181100A3FF70 /* SPHalfCircleLabView.m */,
+				FF4ED4851ECC181100A3FF70 /* SPHeadCellView.h */,
+				FF4ED4861ECC181100A3FF70 /* SPHeadCellView.m */,
+				FF4ED4871ECC181100A3FF70 /* SPScreeningView.h */,
+				FF4ED4881ECC181100A3FF70 /* SPScreeningView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FF4ED4891ECC181100A3FF70 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				FF4ED48A1ECC181100A3FF70 /* SPFinancingMainViewController.h */,
+				FF4ED48B1ECC181100A3FF70 /* SPFinancingMainViewController.m */,
+				FF4ED48C1ECC181100A3FF70 /* SPProjectDistributionViewController.h */,
+				FF4ED48D1ECC181100A3FF70 /* SPProjectDistributionViewController.m */,
+				FF780FEA1ECC21950064ABBB /* SPTestViewController.h */,
+				FF780FEB1ECC21950064ABBB /* SPTestViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		FF780FEF1ECC2B710064ABBB /* map */ = {
+			isa = PBXGroup;
+			children = (
+				FF780FF01ECC2B7F0064ABBB /* custom_config_0323(黑夜) */,
+				FF780FF11ECC2B7F0064ABBB /* custom_config_0323(清新蓝) */,
+				FF780FF21ECC2B7F0064ABBB /* custom_config_0323(午夜蓝) */,
+			);
+			name = map;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FF1F545C1ECC17350008F047 /* SPFinancingSystem */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF1F548A1ECC17350008F047 /* Build configuration list for PBXNativeTarget "SPFinancingSystem" */;
+			buildPhases = (
+				46505DD32F138FD5FD7B3277 /* [CP] Check Pods Manifest.lock */,
+				FF1F54591ECC17350008F047 /* Sources */,
+				FF1F545A1ECC17350008F047 /* Frameworks */,
+				FF1F545B1ECC17350008F047 /* Resources */,
+				1E7029E6D70A176CC11E583A /* [CP] Embed Pods Frameworks */,
+				679DEA900A2A0EDE4480D5F1 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SPFinancingSystem;
+			productName = SPFinancingSystem;
+			productReference = FF1F545D1ECC17350008F047 /* SPFinancingSystem.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FF1F54751ECC17350008F047 /* SPFinancingSystemTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF1F548D1ECC17350008F047 /* Build configuration list for PBXNativeTarget "SPFinancingSystemTests" */;
+			buildPhases = (
+				D7B6C0E16BEE7EF77DCF707D /* [CP] Check Pods Manifest.lock */,
+				FF1F54721ECC17350008F047 /* Sources */,
+				FF1F54731ECC17350008F047 /* Frameworks */,
+				FF1F54741ECC17350008F047 /* Resources */,
+				4F920EB83CBC5F23A9016881 /* [CP] Embed Pods Frameworks */,
+				042F145DE92635E5C46B7AFE /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FF1F54781ECC17350008F047 /* PBXTargetDependency */,
+			);
+			name = SPFinancingSystemTests;
+			productName = SPFinancingSystemTests;
+			productReference = FF1F54761ECC17350008F047 /* SPFinancingSystemTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FF1F54801ECC17350008F047 /* SPFinancingSystemUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF1F54901ECC17350008F047 /* Build configuration list for PBXNativeTarget "SPFinancingSystemUITests" */;
+			buildPhases = (
+				B27E19D3E2BBD42BB6BC7624 /* [CP] Check Pods Manifest.lock */,
+				FF1F547D1ECC17350008F047 /* Sources */,
+				FF1F547E1ECC17350008F047 /* Frameworks */,
+				FF1F547F1ECC17350008F047 /* Resources */,
+				7205343DB721C5059F24726B /* [CP] Embed Pods Frameworks */,
+				B30685766535833E8452A1DD /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FF1F54831ECC17350008F047 /* PBXTargetDependency */,
+			);
+			name = SPFinancingSystemUITests;
+			productName = SPFinancingSystemUITests;
+			productReference = FF1F54811ECC17350008F047 /* SPFinancingSystemUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FF1F54551ECC17350008F047 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = ppan;
+				TargetAttributes = {
+					FF1F545C1ECC17350008F047 = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = ZXLL6GR6YH;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
+					};
+					FF1F54751ECC17350008F047 = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = ZXLL6GR6YH;
+						ProvisioningStyle = Automatic;
+						TestTargetID = FF1F545C1ECC17350008F047;
+					};
+					FF1F54801ECC17350008F047 = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = ZXLL6GR6YH;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
+						TestTargetID = FF1F545C1ECC17350008F047;
+					};
+				};
+			};
+			buildConfigurationList = FF1F54581ECC17350008F047 /* Build configuration list for PBXProject "SPFinancingSystem" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FF1F54541ECC17350008F047;
+			productRefGroup = FF1F545E1ECC17350008F047 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FF1F545C1ECC17350008F047 /* SPFinancingSystem */,
+				FF1F54751ECC17350008F047 /* SPFinancingSystemTests */,
+				FF1F54801ECC17350008F047 /* SPFinancingSystemUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FF1F545B1ECC17350008F047 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF780FF51ECC2B7F0064ABBB /* custom_config_0323(午夜蓝) in Resources */,
+				FF1F54701ECC17350008F047 /* LaunchScreen.storyboard in Resources */,
+				FF1F546D1ECC17350008F047 /* Assets.xcassets in Resources */,
+				FF780FF41ECC2B7F0064ABBB /* custom_config_0323(清新蓝) in Resources */,
+				FF1F546B1ECC17350008F047 /* Main.storyboard in Resources */,
+				FF780FF31ECC2B7F0064ABBB /* custom_config_0323(黑夜) in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF1F54741ECC17350008F047 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF1F547F1ECC17350008F047 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		042F145DE92635E5C46B7AFE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SPFinancingSystemTests/Pods-SPFinancingSystemTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1E7029E6D70A176CC11E583A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SPFinancingSystem/Pods-SPFinancingSystem-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		46505DD32F138FD5FD7B3277 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4F920EB83CBC5F23A9016881 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SPFinancingSystemTests/Pods-SPFinancingSystemTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		679DEA900A2A0EDE4480D5F1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SPFinancingSystem/Pods-SPFinancingSystem-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7205343DB721C5059F24726B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SPFinancingSystem-SPFinancingSystemUITests/Pods-SPFinancingSystem-SPFinancingSystemUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B27E19D3E2BBD42BB6BC7624 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B30685766535833E8452A1DD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SPFinancingSystem-SPFinancingSystemUITests/Pods-SPFinancingSystem-SPFinancingSystemUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D7B6C0E16BEE7EF77DCF707D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FF1F54591ECC17350008F047 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF4ED4961ECC181100A3FF70 /* UIView+Frame.m in Sources */,
+				FF4ED4901ECC181100A3FF70 /* SPBaseViewController.m in Sources */,
+				FF4ED4941ECC181100A3FF70 /* UIColor+Hex.m in Sources */,
+				FF4ED48F1ECC181100A3FF70 /* SPBaseView.m in Sources */,
+				FF1F54681ECC17350008F047 /* ViewController.m in Sources */,
+				FF4ED49D1ECC181100A3FF70 /* SPScreeningView.m in Sources */,
+				FF4ED49E1ECC181100A3FF70 /* SPFinancingMainViewController.m in Sources */,
+				FF4ED4981ECC181100A3FF70 /* SPFinacingHeadCell.m in Sources */,
+				FF4ED49F1ECC181100A3FF70 /* SPProjectDistributionViewController.m in Sources */,
+				FF4ED48E1ECC181100A3FF70 /* SPBaseTableViewCell.m in Sources */,
+				FF780FFF1ECC2E4C0064ABBB /* NSData+YYAdd.m in Sources */,
+				FF4ED4971ECC181100A3FF70 /* UIViewController+KKUser.m in Sources */,
+				FF1F54651ECC17350008F047 /* AppDelegate.m in Sources */,
+				FF4ED49B1ECC181100A3FF70 /* SPHalfCircleLabView.m in Sources */,
+				FF780FF81ECC2D9C0064ABBB /* NSArray+YYAdd.m in Sources */,
+				FF780FEC1ECC21950064ABBB /* SPTestViewController.m in Sources */,
+				FF4ED49A1ECC181100A3FF70 /* SPHalfCicrleTableViewCell.m in Sources */,
+				FF4ED4991ECC181100A3FF70 /* SPFinancingMainTableCell.m in Sources */,
+				FF4ED4911ECC181100A3FF70 /* SPBaseViewModel.m in Sources */,
+				FF1F54621ECC17350008F047 /* main.m in Sources */,
+				FF4ED4951ECC181100A3FF70 /* UIView+Common.m in Sources */,
+				FF4ED4921ECC181100A3FF70 /* SPBaseWebViewController.m in Sources */,
+				FF4ED4931ECC181100A3FF70 /* SPChartBaseViewController.m in Sources */,
+				FF4ED49C1ECC181100A3FF70 /* SPHeadCellView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF1F54721ECC17350008F047 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF1F547B1ECC17350008F047 /* SPFinancingSystemTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF1F547D1ECC17350008F047 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF1F54861ECC17350008F047 /* SPFinancingSystemUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FF1F54781ECC17350008F047 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF1F545C1ECC17350008F047 /* SPFinancingSystem */;
+			targetProxy = FF1F54771ECC17350008F047 /* PBXContainerItemProxy */;
+		};
+		FF1F54831ECC17350008F047 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF1F545C1ECC17350008F047 /* SPFinancingSystem */;
+			targetProxy = FF1F54821ECC17350008F047 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FF1F54691ECC17350008F047 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF1F546A1ECC17350008F047 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FF1F546E1ECC17350008F047 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF1F546F1ECC17350008F047 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FF1F54881ECC17350008F047 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FF1F54891ECC17350008F047 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FF1F548B1ECC17350008F047 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7EDC838362EA0704D43CAD48 /* Pods-SPFinancingSystem.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = ZXLL6GR6YH;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SPFinancingSystem",
+				);
+				GCC_PREFIX_HEADER = SPFinancingSystem/SPFinacingSystem.pch;
+				INFOPLIST_FILE = SPFinancingSystem/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.GZSP.SPFinancingSystem;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SPFinancingSystem/SPFinancingSystem-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		FF1F548C1ECC17350008F047 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D9312FAA53EA5821629DB1EA /* Pods-SPFinancingSystem.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = ZXLL6GR6YH;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SPFinancingSystem",
+				);
+				GCC_PREFIX_HEADER = SPFinancingSystem/SPFinacingSystem.pch;
+				INFOPLIST_FILE = SPFinancingSystem/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.GZSP.SPFinancingSystem;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SPFinancingSystem/SPFinancingSystem-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		FF1F548E1ECC17350008F047 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 751EEE43BA804777E6D1E65F /* Pods-SPFinancingSystemTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = ZXLL6GR6YH;
+				INFOPLIST_FILE = SPFinancingSystemTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.GZSP.SPFinancingSystemTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SPFinancingSystem.app/SPFinancingSystem";
+			};
+			name = Debug;
+		};
+		FF1F548F1ECC17350008F047 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC919289F736A1A8DA9CD62B /* Pods-SPFinancingSystemTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = ZXLL6GR6YH;
+				INFOPLIST_FILE = SPFinancingSystemTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.GZSP.SPFinancingSystemTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SPFinancingSystem.app/SPFinancingSystem";
+			};
+			name = Release;
+		};
+		FF1F54911ECC17350008F047 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F997D50BE9313FD9CBD98EED /* Pods-SPFinancingSystem-SPFinancingSystemUITests.debug.xcconfig */;
+			buildSettings = {
+				DEVELOPMENT_TEAM = ZXLL6GR6YH;
+				INFOPLIST_FILE = SPFinancingSystemUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.GZSP.SPFinancingSystemUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = SPFinancingSystem;
+			};
+			name = Debug;
+		};
+		FF1F54921ECC17350008F047 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 46F80BA30EDFB068C1D04C79 /* Pods-SPFinancingSystem-SPFinancingSystemUITests.release.xcconfig */;
+			buildSettings = {
+				DEVELOPMENT_TEAM = ZXLL6GR6YH;
+				INFOPLIST_FILE = SPFinancingSystemUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.GZSP.SPFinancingSystemUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = SPFinancingSystem;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FF1F54581ECC17350008F047 /* Build configuration list for PBXProject "SPFinancingSystem" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF1F54881ECC17350008F047 /* Debug */,
+				FF1F54891ECC17350008F047 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF1F548A1ECC17350008F047 /* Build configuration list for PBXNativeTarget "SPFinancingSystem" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF1F548B1ECC17350008F047 /* Debug */,
+				FF1F548C1ECC17350008F047 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF1F548D1ECC17350008F047 /* Build configuration list for PBXNativeTarget "SPFinancingSystemTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF1F548E1ECC17350008F047 /* Debug */,
+				FF1F548F1ECC17350008F047 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF1F54901ECC17350008F047 /* Build configuration list for PBXNativeTarget "SPFinancingSystemUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF1F54911ECC17350008F047 /* Debug */,
+				FF1F54921ECC17350008F047 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FF1F54551ECC17350008F047 /* Project object */;
+}
