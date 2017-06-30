@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1A119FF3CAA9CB1F50021D1F /* Pods_SPFinancingSystem.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 882DC48DE78C381449F1B50A /* Pods_SPFinancingSystem.framework */; };
-		3070AA457037FB81FDA60C5E /* Pods_SPFinancingSystemTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5372C51CBC0D9471FD9039AF /* Pods_SPFinancingSystemTests.framework */; };
-		E7D0B4A29E9209AFB56FEE23 /* Pods_SPFinancingSystem_SPFinancingSystemUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6152045F47BA5065621C155 /* Pods_SPFinancingSystem_SPFinancingSystemUITests.framework */; };
+		04AD5ABCCF2FE943B0264FCF /* libPods-SPFinancingSystem.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 55F6F4919202BBD43DBB4868 /* libPods-SPFinancingSystem.a */; };
+		D4CEF5CD653D27ED62E2AFA5 /* libPods-SPFinancingSystemTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B7B4E8C74ED9BA5EA4F8E5A /* libPods-SPFinancingSystemTests.a */; };
+		E76DAB86E6DFF325575422D5 /* libPods-SPFinancingSystem-SPFinancingSystemUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E61E9B0A909CB18A0BDFD35 /* libPods-SPFinancingSystem-SPFinancingSystemUITests.a */; };
 		FF1F54621ECC17350008F047 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FF1F54611ECC17350008F047 /* main.m */; };
 		FF1F54651ECC17350008F047 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FF1F54641ECC17350008F047 /* AppDelegate.m */; };
 		FF1F54681ECC17350008F047 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF1F54671ECC17350008F047 /* ViewController.m */; };
@@ -18,6 +18,9 @@
 		FF1F54701ECC17350008F047 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF1F546E1ECC17350008F047 /* LaunchScreen.storyboard */; };
 		FF1F547B1ECC17350008F047 /* SPFinancingSystemTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FF1F547A1ECC17350008F047 /* SPFinancingSystemTests.m */; };
 		FF1F54861ECC17350008F047 /* SPFinancingSystemUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FF1F54851ECC17350008F047 /* SPFinancingSystemUITests.m */; };
+		FF26E1001ECC3F5200558A8C /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF780FED1ECC2A3E0064ABBB /* Charts.framework */; };
+		FF26E10C1ECC3FB400558A8C /* ReferenceProxy in Frameworks */ = {isa = PBXBuildFile; fileRef = FF26E1091ECC3F9200558A8C /* Charts.framework */; };
+		FF26E10D1ECC3FB400558A8C /* ReferenceProxy in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FF26E1091ECC3F9200558A8C /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FF4ED48E1ECC181100A3FF70 /* SPBaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FF4ED4671ECC181100A3FF70 /* SPBaseTableViewCell.m */; };
 		FF4ED48F1ECC181100A3FF70 /* SPBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = FF4ED4691ECC181100A3FF70 /* SPBaseView.m */; };
 		FF4ED4901ECC181100A3FF70 /* SPBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF4ED46B1ECC181100A3FF70 /* SPBaseViewController.m */; };
@@ -37,7 +40,6 @@
 		FF4ED49E1ECC181100A3FF70 /* SPFinancingMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF4ED48B1ECC181100A3FF70 /* SPFinancingMainViewController.m */; };
 		FF4ED49F1ECC181100A3FF70 /* SPProjectDistributionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF4ED48D1ECC181100A3FF70 /* SPProjectDistributionViewController.m */; };
 		FF780FEC1ECC21950064ABBB /* SPTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF780FEB1ECC21950064ABBB /* SPTestViewController.m */; };
-		FF780FEE1ECC2A3E0064ABBB /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF780FED1ECC2A3E0064ABBB /* Charts.framework */; };
 		FF780FF31ECC2B7F0064ABBB /* custom_config_0323(黑夜) in Resources */ = {isa = PBXBuildFile; fileRef = FF780FF01ECC2B7F0064ABBB /* custom_config_0323(黑夜) */; };
 		FF780FF41ECC2B7F0064ABBB /* custom_config_0323(清新蓝) in Resources */ = {isa = PBXBuildFile; fileRef = FF780FF11ECC2B7F0064ABBB /* custom_config_0323(清新蓝) */; };
 		FF780FF51ECC2B7F0064ABBB /* custom_config_0323(午夜蓝) in Resources */ = {isa = PBXBuildFile; fileRef = FF780FF21ECC2B7F0064ABBB /* custom_config_0323(午夜蓝) */; };
@@ -60,16 +62,51 @@
 			remoteGlobalIDString = FF1F545C1ECC17350008F047;
 			remoteInfo = SPFinancingSystem;
 		};
+		FF26E1081ECC3F9200558A8C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF26E1031ECC3F9200558A8C /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 06165F241D8110E600722320;
+			remoteInfo = Charts;
+		};
+		FF26E10A1ECC3F9200558A8C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF26E1031ECC3F9200558A8C /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 06165F2E1D8110E600722320;
+			remoteInfo = ChartsTests;
+		};
+		FF26E10E1ECC3FB400558A8C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF26E1031ECC3F9200558A8C /* Charts.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 06165F231D8110E600722320;
+			remoteInfo = Charts;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FF26E1101ECC3FB400558A8C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				FF26E10D1ECC3FB400558A8C /* ReferenceProxy in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		46F80BA30EDFB068C1D04C79 /* Pods-SPFinancingSystem-SPFinancingSystemUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SPFinancingSystem-SPFinancingSystemUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SPFinancingSystem-SPFinancingSystemUITests/Pods-SPFinancingSystem-SPFinancingSystemUITests.release.xcconfig"; sourceTree = "<group>"; };
-		5372C51CBC0D9471FD9039AF /* Pods_SPFinancingSystemTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SPFinancingSystemTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B7B4E8C74ED9BA5EA4F8E5A /* libPods-SPFinancingSystemTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SPFinancingSystemTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E61E9B0A909CB18A0BDFD35 /* libPods-SPFinancingSystem-SPFinancingSystemUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SPFinancingSystem-SPFinancingSystemUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		55F6F4919202BBD43DBB4868 /* libPods-SPFinancingSystem.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SPFinancingSystem.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		751EEE43BA804777E6D1E65F /* Pods-SPFinancingSystemTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SPFinancingSystemTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SPFinancingSystemTests/Pods-SPFinancingSystemTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7EDC838362EA0704D43CAD48 /* Pods-SPFinancingSystem.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SPFinancingSystem.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SPFinancingSystem/Pods-SPFinancingSystem.debug.xcconfig"; sourceTree = "<group>"; };
-		882DC48DE78C381449F1B50A /* Pods_SPFinancingSystem.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SPFinancingSystem.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC919289F736A1A8DA9CD62B /* Pods-SPFinancingSystemTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SPFinancingSystemTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SPFinancingSystemTests/Pods-SPFinancingSystemTests.release.xcconfig"; sourceTree = "<group>"; };
-		C6152045F47BA5065621C155 /* Pods_SPFinancingSystem_SPFinancingSystemUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SPFinancingSystem_SPFinancingSystemUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9312FAA53EA5821629DB1EA /* Pods-SPFinancingSystem.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SPFinancingSystem.release.xcconfig"; path = "Pods/Target Support Files/Pods-SPFinancingSystem/Pods-SPFinancingSystem.release.xcconfig"; sourceTree = "<group>"; };
 		F997D50BE9313FD9CBD98EED /* Pods-SPFinancingSystem-SPFinancingSystemUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SPFinancingSystem-SPFinancingSystemUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SPFinancingSystem-SPFinancingSystemUITests/Pods-SPFinancingSystem-SPFinancingSystemUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		FF1F545D1ECC17350008F047 /* SPFinancingSystem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SPFinancingSystem.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -88,6 +125,7 @@
 		FF1F54811ECC17350008F047 /* SPFinancingSystemUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SPFinancingSystemUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF1F54851ECC17350008F047 /* SPFinancingSystemUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPFinancingSystemUITests.m; sourceTree = "<group>"; };
 		FF1F54871ECC17350008F047 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF26E1031ECC3F9200558A8C /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = "../Downloads/Charts-master/Charts.xcodeproj"; sourceTree = "<group>"; };
 		FF4ED4651ECC181100A3FF70 /* Global.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Global.h; sourceTree = "<group>"; };
 		FF4ED4661ECC181100A3FF70 /* SPBaseTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPBaseTableViewCell.h; sourceTree = "<group>"; };
 		FF4ED4671ECC181100A3FF70 /* SPBaseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPBaseTableViewCell.m; sourceTree = "<group>"; };
@@ -145,8 +183,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A119FF3CAA9CB1F50021D1F /* Pods_SPFinancingSystem.framework in Frameworks */,
-				FF780FEE1ECC2A3E0064ABBB /* Charts.framework in Frameworks */,
+				FF26E10C1ECC3FB400558A8C /* ReferenceProxy in Frameworks */,
+				FF26E1001ECC3F5200558A8C /* Charts.framework in Frameworks */,
+				04AD5ABCCF2FE943B0264FCF /* libPods-SPFinancingSystem.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,7 +193,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3070AA457037FB81FDA60C5E /* Pods_SPFinancingSystemTests.framework in Frameworks */,
+				D4CEF5CD653D27ED62E2AFA5 /* libPods-SPFinancingSystemTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -162,7 +201,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E7D0B4A29E9209AFB56FEE23 /* Pods_SPFinancingSystem_SPFinancingSystemUITests.framework in Frameworks */,
+				E76DAB86E6DFF325575422D5 /* libPods-SPFinancingSystem-SPFinancingSystemUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,9 +224,9 @@
 		88E94968C1ACCA45EA986739 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				882DC48DE78C381449F1B50A /* Pods_SPFinancingSystem.framework */,
-				C6152045F47BA5065621C155 /* Pods_SPFinancingSystem_SPFinancingSystemUITests.framework */,
-				5372C51CBC0D9471FD9039AF /* Pods_SPFinancingSystemTests.framework */,
+				55F6F4919202BBD43DBB4868 /* libPods-SPFinancingSystem.a */,
+				4E61E9B0A909CB18A0BDFD35 /* libPods-SPFinancingSystem-SPFinancingSystemUITests.a */,
+				4B7B4E8C74ED9BA5EA4F8E5A /* libPods-SPFinancingSystemTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -195,6 +234,7 @@
 		FF1F54541ECC17350008F047 = {
 			isa = PBXGroup;
 			children = (
+				FF26E1031ECC3F9200558A8C /* Charts.xcodeproj */,
 				FF1F545F1ECC17350008F047 /* SPFinancingSystem */,
 				FF1F54791ECC17350008F047 /* SPFinancingSystemTests */,
 				FF1F54841ECC17350008F047 /* SPFinancingSystemUITests */,
@@ -259,6 +299,15 @@
 				FF1F54871ECC17350008F047 /* Info.plist */,
 			);
 			path = SPFinancingSystemUITests;
+			sourceTree = "<group>";
+		};
+		FF26E1041ECC3F9200558A8C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FF26E1091ECC3F9200558A8C /* Charts.framework */,
+				FF26E10B1ECC3F9200558A8C /* ChartsTests.xctest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		FF4ED4631ECC181100A3FF70 /* Classes */ = {
@@ -375,10 +424,12 @@
 				FF1F545B1ECC17350008F047 /* Resources */,
 				1E7029E6D70A176CC11E583A /* [CP] Embed Pods Frameworks */,
 				679DEA900A2A0EDE4480D5F1 /* [CP] Copy Pods Resources */,
+				FF26E1101ECC3FB400558A8C /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				FF26E10F1ECC3FB400558A8C /* PBXTargetDependency */,
 			);
 			name = SPFinancingSystem;
 			productName = SPFinancingSystem;
@@ -468,6 +519,12 @@
 			mainGroup = FF1F54541ECC17350008F047;
 			productRefGroup = FF1F545E1ECC17350008F047 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = FF26E1041ECC3F9200558A8C /* Products */;
+					ProjectRef = FF26E1031ECC3F9200558A8C /* Charts.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				FF1F545C1ECC17350008F047 /* SPFinancingSystem */,
@@ -476,6 +533,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		FF26E1091ECC3F9200558A8C /* Charts.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Charts.framework;
+			remoteRef = FF26E1081ECC3F9200558A8C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FF26E10B1ECC3F9200558A8C /* ChartsTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ChartsTests.xctest;
+			remoteRef = FF26E10A1ECC3F9200558A8C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		FF1F545B1ECC17350008F047 /* Resources */ = {
@@ -706,6 +780,11 @@
 			target = FF1F545C1ECC17350008F047 /* SPFinancingSystem */;
 			targetProxy = FF1F54821ECC17350008F047 /* PBXContainerItemProxy */;
 		};
+		FF26E10F1ECC3FB400558A8C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Charts;
+			targetProxy = FF26E10E1ECC3FB400558A8C /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -822,6 +901,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7EDC838362EA0704D43CAD48 /* Pods-SPFinancingSystem.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = ZXLL6GR6YH;
@@ -844,6 +924,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D9312FAA53EA5821629DB1EA /* Pods-SPFinancingSystem.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = ZXLL6GR6YH;

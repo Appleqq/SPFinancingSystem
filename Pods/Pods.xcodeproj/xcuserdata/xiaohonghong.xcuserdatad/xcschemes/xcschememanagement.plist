@@ -9,11 +9,6 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Charts.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>Pods-SPFinancingSystem-SPFinancingSystemUITests.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -47,42 +42,37 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>0341A23E122DFF50B2129F0AC1570420</key>
+		<key>0AC55E754182E1FCF070AC7F74379523</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>2B64FD585B47C1E2FF5FF0323B95447B</key>
+		<key>25320E1435353798645CB6BC5C51CF67</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>80C2B74683710E6257605EBD72BFAF7B</key>
+		<key>308EFE7F1CB894329496890620556BBA</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E35919F41C6033904A6056F1735CD4C0</key>
+		<key>3C9589A85FD27DBE43F14F860999538F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>EBA2449F3A095963382448B4F7A46C0C</key>
+		<key>5DEDF7FE82F32F6E2B845F564C153A3E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>F307B842FF76B2DE6C55DB67C0885325</key>
+		<key>94634D373408FCDF95C41D45AFA2EB91</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>F8AE819E40E702A5FBCF44747F69E512</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>FAC4DBB4F79DBE0FA8D0658CF4970DD0</key>
+		<key>E8EFBD6014C9B1FE288D14927ECA99A8</key>
 		<dict>
 			<key>primary</key>
 			<true/>

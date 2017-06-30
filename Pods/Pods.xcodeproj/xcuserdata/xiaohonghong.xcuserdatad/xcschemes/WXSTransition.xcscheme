@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'F8AE819E40E702A5FBCF44747F69E512'
+               BlueprintIdentifier = '3C9589A85FD27DBE43F14F860999538F'
                BlueprintName = 'WXSTransition'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'WXSTransition.framework'>
+               BuildableName = 'libWXSTransition.a'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
